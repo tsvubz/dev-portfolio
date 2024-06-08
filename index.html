@@ -7,7 +7,7 @@
 
         <link rel="stylesheet" href="/assets/css/styles.css" />
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+        
 
         <title>Terence Svubure Portfolio</title>
     </head>
@@ -15,9 +15,9 @@
         <nav>
             <h1>Terence Svubure</h1>
             <ul class="navigation">
-                <li><a href="#about" class="nav-link">About</a></li>
-                <li><a href="#skills" class="nav-link">Skills</a></li>
-                <li><a href="#projects" class="nav-link">Projects</a></li>
+                <li><a href="#about" class="nav-link" ><i class="fa-solid fa-user"></i> About</a></li>
+                <li><a href="#skills" class="nav-link"><i class="fa-brands fa-medapps"></i> Skills</a></li>
+                <li><a href="#projects" class="nav-link"><i class="fa-solid fa-laptop-code"></i> Projects</a></li>
             </ul>
             <button class="burger-menu" id="burger-menu">
                 <ion-icon class="bars" name="menu-outline"></ion-icon>
@@ -32,13 +32,23 @@
               class="hero-img"
             />
             <div class="bio animate__animated animate__shakeX">
-              <h2 class="bio-title">About Me</h2>
-              <p class="bio-text">
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia sed
-                dolorem fugit sapiente porro veniam pariatur dolore nostrum delectus
-                inventore tempore minus nemo, iste ullam illo laboriosam maiores
-                repudiandae quos!
-              </p>
+              <div class="bio-right">
+                <h2 class="bio-title">About Me</h2>
+                <p class="bio-text">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia sed
+                    dolorem fugit sapiente porro veniam pariatur dolore nostrum delectus
+                    inventore tempore minus nemo, iste ullam illo laboriosam maiores
+                    repudiandae quos!
+                </p>
+              </div>
+              <div class="bio-left">
+                <img
+                src="assets/icons/Terence Svubure.jpg"
+                alt="Terence Svubure"
+                loading="lazy"
+                />
+              </div>  
+              
             </div>
         </section>
         <section class="more-about">
@@ -59,7 +69,7 @@
             </p>
         </section>
         <section class="skills" id="skills">
-            <h2 class="skill-header">My Top Skills</h2>
+            <h2 class="skill-header">Skills</h2>
       
             <div class="skills-wrapper">
               <div class="first-set animate__animated animate__pulse">
@@ -117,6 +127,86 @@
               </div>
             </div>
         </section>
+        <section class="projects" id="projects">
+            <h2 class="projects-title">Projects</h2>
+            <div class="projects-container">
+              <div class="project-container project-card">
+                <img
+                  src="assets/images/icons8-jack-of-spades-50.png"
+                  alt="expense-tracker"
+                  loading="lazy"
+                  class="project-pic"
+                />
+                <h3 class="project-title">Black Jack</h3>
+                <p class="project-details">
+                  Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quas
+                  ratione vel inventore labore commodi modi quos culpa aut saepe!
+                  Alias!
+                </p>
+                <a href="https://github.com/tsvubz/blackjack_game.git"  class="project-link">Check it Out</a>
+              </div>
+              <div class="project-container project-card">
+                <img
+                  src="assets/images/icons8-counter-64.png"
+                  alt="netflic-clone"
+                  loading="lazy"
+                  class="project-pic"
+                />
+                <h3 class="project-title">Counter</h3>
+                <p class="project-details">
+                  Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quas
+                  ratione vel inventore labore commodi modi quos culpa aut saepe!
+                  Alias!
+                </p>
+                <a href="https://github.com/tsvubz/jam_counter.git" target="_blank" class="project-link">Check it Out</a>
+              </div>
+              <div class="project-container project-card">
+                <img
+                  src="assets/images/icons8-snake-48.png"
+                  alt="greeny-earth"
+                  loading="lazy"
+                  class="project-pic"
+                />
+                <h3 class="project-title">Snake Game</h3>
+                <p class="project-details">
+                  Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quas
+                  ratione vel inventore labore commodi modi quos culpa aut saepe!
+                  Alias!
+                </p>
+                <a href="https://github.com/tsvubz/snakeGame.git" class="project-link">Check it Out</a>
+              </div>
+            </div>
+        </section>
+
+        <div class="socials">
+            <a href="https://www.linkedin.com/in/terence-svubure/" target="_blank"
+              ><img
+                src="assets/icons/icons8-linkedin-circled.gif"
+                alt="Linkedin"
+                loading="lazy"
+                class="socicon"
+            /></a>
+            <a href="https://github.com/tsvubz?tab=repositories" target="_blank"
+              ><img src="assets/icons/icons8-github.gif" alt="Github" class="socicon"
+            /></a>
+        </div>
+
+        <footer>
+            <p class="copy">&copy; Copyright 2024</p>
+            <p class="copy">
+              Built by
+              <a target="_blank"
+                >Terence Svubure</a>
+            </p>
+        </footer>
+
+        <i class="scroll-up" id="scroll-up"
+          ><img
+            src="assets/icons/icons8-upward-arrow.gif"
+            class="socicon up-arrow"
+            alt="scroll-up"
+            />
+        </i>
 
 
 
@@ -131,6 +221,8 @@
             nomodule
             src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
         ></script>
+        <script src="https://kit.fontawesome.com/61d9644f47.js" crossorigin="anonymous"></script>
+        <script src="/assets/js/app.js"></script>
 
     </body>
 </html>
